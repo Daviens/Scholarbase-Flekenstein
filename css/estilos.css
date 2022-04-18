@@ -1,0 +1,290 @@
+/* resetea los estilos default de los navegadores */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Tiene 400, 400i, 600, 600i */
+body{
+    font-family: 'Spectral', serif;
+}
+main {
+    background-color: #CEAB93;
+}
+/* codigo del footer */
+.pie {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    background-color: #AD8B73;
+    text-align: center;
+}
+.discord {
+    width: 100px;
+    height: 52px;
+}
+.twitter {
+    width: 50px;
+    height: 50px;
+}
+/* Codigo del header */
+header {
+    background-color: #E3CAA5;
+    height: 70px;
+    width: 100%;
+}
+.slp {
+    width: 60px;
+    height: 60px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 60px repeat(3, 1fr);
+}
+.grid__hijo{
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.grid__hijo--4 ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.grid__hijo--4 ul li a {
+    text-decoration: none;
+}
+h1 {
+    color: rgb(8, 66, 141);
+    font-weight: 600;
+}
+/* Codigo del main Index */
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.bloque1 h3, .bloque1 p, .bloque1 ul {
+    padding-left: 1rem;
+    list-style: none;
+}
+.bloque1 ul li {
+    padding-left: 1rem;
+}
+.axs {
+    align-self: center;
+}
+.axs__imagen {
+    width: 190px;
+    height: 180px;
+}
+.bloque2 {
+    padding-right: 1rem;
+}
+.v3 {
+    width: 100%;
+    height: 28rem;
+}
+.v3__imagen {
+    width: 100%;
+    height: 28rem;
+}
+/* Codigo del main Como jugar */
+.mainjugar {
+    display: flex;
+}
+.concepto {
+    font-size: 30px;
+}
+aside article h4{
+    display: block;
+}
+aside article p {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+}
+.costado {
+    display: flex;
+    flex-wrap: wrap;
+}
+aside.costado div {
+    width: 52%;
+}
+iframe {
+    position: relative;
+    bottom: 10px;
+}
+/* Codigo main Guild */
+.general {
+    display: flex;
+}
+.general__div1 {
+    width: 50%;
+    position: relative;
+    top: 70px;
+    padding-left: 5px;
+}
+.general__div2 {
+    height: 472px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+}
+.div1__ronin {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+.div1__caja {
+    display: inline-block;
+    width: 50%;
+}
+.div1__titulo {
+    display: absolute;
+}
+.general__div2 div {
+    border: 1px solid black;
+}
+.general__div2 div p {
+    padding-left: 4px;
+}
+/* Codigo main Herramientas */
+.tools {
+    display: flex;
+    padding: 5px;
+}
+.tools__div1 {
+    width: 65%;
+}
+.tools__div2 {
+    width: 35%;
+}
+.tools__katana {
+    border: 1px solid black;
+}
+.tools__katana img {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    padding: 4px;
+}
+.tools__katana div {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    bottom: 40px;
+}
+.tools__externos {
+    border: 1px solid black;
+    margin-top: 100px;
+    background-color: #d6b9a5;
+}
+.tools__externos h4 {
+    text-align: center;
+}
+.tools__externos p{
+    text-align: center;
+}
+.tools__externos ul {
+    display: flex;
+    position: relative;
+    left: 100px;
+    list-style: none;
+}
+.tools__externos ul li a {
+    text-decoration: none;
+    margin: 5px;
+}
+.tools__streamers {
+    border: 1px solid black;
+    margin-top: 200px;
+    background-color: #d6b9a5;
+}
+/* Codigo main Contacto */
+.contact {
+    height: 76vh;
+}
+.org {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.org__ingreso {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-image: url(../images/imagen-axie-6.png);
+    object-fit: cover;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+}
+.org__informacion {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-image: url(../images/imagen-axie-4.webp);
+    position: relative;
+    top: 100px;
+}
+.ig, .tw {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    margin-left: 35px;
+}
+/* Media Queries */
+@media screen and (max-width:1023px) {
+    /* header */
+    .contenedor {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .grid__hijo--4 {
+        display: none;
+    }
+    /* index */
+    .v3 {
+        height: 20rem;
+    }
+    .v3__imagen {
+        height: 20rem;
+    }
+    .bloques {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .bloque1 , .bloque2 {
+        padding: 1rem;
+    }
+    .axs {
+        display: none;
+    }
+    /* como jugar */
+ 
+}
+@media screen and (max-width: 500px) {
+    /* header */
+    nav {
+        grid-template-columns: 60px repeat(2, 1fr);
+    }
+    .grid__hijo--3 {
+        display: none;
+    }
+    /* index */
+    .v3 {
+        height: 15rem;
+    }
+    .v3__imagen {
+        height: 15rem;
+    }
+    .bloques {
+        grid-template-columns: 1fr;
+    }
+    /* como jugar */
+}
