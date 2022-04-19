@@ -167,7 +167,6 @@ iframe {
 }
 .div1__caja {
     display: inline-block;
-    /* width: 50%; */
 }
 .div1__titulo {
     display: absolute;
@@ -180,46 +179,45 @@ iframe {
 }
 /* Codigo Herramientas */
 .tools {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
     padding: 5px;
 }
 .tools__div1 {
-    width: 65%;
-}
-.tools__div2 {
-    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .tools__katana {
     border: 1px solid black;
+    display: flex;
+    align-items: center;
 }
 .tools__katana img {
     width: 300px;
     height: 300px;
-    display: inline-block;
     padding: 4px;
 }
-.tools__katana div {
-    display: inline-block;
-    width: 50%;
-    position: relative;
-    bottom: 40px;
+.tools__div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .tools__externos {
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
-    margin-top: 100px;
     background-color: #d6b9a5;
-}
-.tools__externos h4 {
-    text-align: center;
+    align-items: center;
 }
 .tools__externos p{
     text-align: center;
 }
 .tools__externos ul {
     display: flex;
-    position: relative;
-    left: 100px;
     list-style: none;
+    justify-content: center;
 }
 .tools__externos ul li a {
     text-decoration: none;
@@ -227,8 +225,13 @@ iframe {
 }
 .tools__streamers {
     border: 1px solid black;
-    margin-top: 200px;
     background-color: #d6b9a5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tools__streamers p a {
+    text-decoration: none;
 }
 /* Codigo Contacto */
 .contact {
@@ -319,6 +322,10 @@ iframe {
         width: 30rem;
         height: 7rem;
     }
+    /* herramientas */
+    .tools {
+        grid-template-columns: 1fr;
+    }
 }
 @media screen and (max-width: 640px) {
     /* header */
@@ -351,5 +358,21 @@ iframe {
     /*como jugar */
     .mainjugar__triangulo {
         flex-direction: column;
+    }
+    /* herramientas */
+    .tools {
+        padding: 0px;
+    }
+    .tools__katana {
+        flex-direction: column;
+    }
+    .tools__katana img {
+        width: 100px;
+        height: 100px;
+        padding: 0px;
+    }
+    .tools__staking img {
+        width: 320px;
+        height: 100px;
     }
 }
