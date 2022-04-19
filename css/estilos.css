@@ -90,12 +90,12 @@ h1 {
 }
 /* Codigo Como jugar */
 .mainjugar {
-    display: flex;
-}
-.mainjugar section {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr repeat(2, 1fr);
+    grid-template-areas: 
+        "ele1 ele1"
+        "ele2 ele3"
+        "ele2 ele4";
+    justify-content: center;
 }
 .cartas {
     width: 35rem;
@@ -114,27 +114,32 @@ section article {
     justify-content: center;
     align-items: center;
 }
-.concepto {
+.mainjugar__titulo {
+    justify-self: center;
     font-size: 30px;
+    grid-area: ele1;
 }
-aside article h4{
-    display: block;
-}
-aside article p {
-    display: inline-block;
-    height: 300px;
-    width: 300px;
-}
-.costado {
+.mainjugar__conceptos {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    grid-area: ele2;
 }
-aside.costado div {
-    width: 52%;
+.mainjugar__triangulo {
+    display: flex;
+    flex-direction: row;
+    grid-area: ele3;
+}
+.mainjugar__triangulo div {
+    width: 25rem;
+}
+.mainjugar__triangulo img {
+    width: 15rem;
+    height: 15rem;
 }
 iframe {
-    position: relative;
-    bottom: 10px;
+    grid-area: ele4;
+    width: 32rem;
+    height: 18rem;
 }
 /* Codigo Guild */
 .general {
