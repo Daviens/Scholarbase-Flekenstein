@@ -88,9 +88,31 @@ h1 {
     width: 100%;
     height: 28rem;
 }
-/* Codigo del main Como jugar */
+/* Codigo Como jugar */
 .mainjugar {
     display: flex;
+}
+.mainjugar section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr repeat(2, 1fr);
+}
+.cartas {
+    width: 35rem;
+    height: 10rem;
+}
+.rondas {
+    width: 35rem;
+    height: 8rem;
+}
+section article ul {
+    list-style: none;
+}
+section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .concepto {
     font-size: 30px;
