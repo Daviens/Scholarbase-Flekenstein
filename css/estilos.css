@@ -95,7 +95,6 @@ h1 {
         "ele1 ele1"
         "ele2 ele3"
         "ele2 ele4";
-    justify-content: center;
 }
 .cartas {
     width: 35rem;
@@ -124,22 +123,27 @@ section article {
     flex-direction: column;
     grid-area: ele2;
 }
+.mainjugar__conceptos article p {
+    width: 30rem;
+}
 .mainjugar__triangulo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     grid-area: ele3;
+    align-items: center;
 }
 .mainjugar__triangulo div {
     width: 25rem;
 }
 .mainjugar__triangulo img {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
 }
 iframe {
     grid-area: ele4;
-    width: 32rem;
+    width: 29rem;
     height: 18rem;
+    justify-self: center;
 }
 /* Codigo Guild */
 .general {
@@ -366,8 +370,22 @@ iframe {
         row-gap: 0.3rem;
     }
     /*como jugar */
-    .mainjugar__triangulo {
-        flex-direction: column;
+    .mainjugar__titulo {
+        width: auto;
+        font-size: 25px;
+    }
+    .mainjugar__conceptos article p {
+        width: auto;
+    }
+    .rondas {
+        width: 320px;
+    }
+    .cartas {
+        width: 320px;
+    }
+    iframe {
+        width: 320px;
+        height: 185px;
     }
     /* herramientas */
     .tools {
