@@ -263,9 +263,9 @@ iframe {
     border: 1px solid black;
     border-radius: 1rem;
     padding: 1rem;
-    background-image: url(../images/imagen-axie-4.webp);
+    background-image: linear-gradient(to bottom, #40DFEF, #B9F8D3);
 }
-.ig, .tw {
+.ig, .tw, .wp, .github, .gmail {
     height: 70px;
     width: 70px;
     position: relative;
@@ -404,6 +404,9 @@ iframe {
         height: 100px;
     }
     /* contacto */
+    .contact {
+        height: auto;
+    }
     .org {
         flex-direction: column;
     }
