@@ -191,14 +191,6 @@ iframe {
 .general__div2 div p {
     padding-left: 4px;
 }
-@keyframes zoom{
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1.5);
-    }
-}
 /* Codigo Herramientas */
 .tools {
     display: grid;
@@ -288,6 +280,15 @@ iframe {
     width: 70px;
     position: relative;
     margin-left: 35px;
+}
+/* animaciones */
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
 }
 /* Media Queries */
 @media screen and (max-width:1023px) {
