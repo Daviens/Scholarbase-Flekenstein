@@ -228,6 +228,14 @@ iframe {
 .general__div2 div p {
     padding-left: 4px;
 }
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
 /* Codigo Herramientas */
 .tools {
     display: grid;
@@ -307,25 +315,47 @@ iframe {
     font-size: 20px;
 }
 .org__informacion {
+    position: relative;
+    height: 16rem;
+    width: 16rem;
+    padding: 1rem;
+}
+.org__informacion div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 2s;
+}
+.frente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #40DFEF, #B9F8D3);
     border: 1px solid black;
     border-radius: 1rem;
-    padding: 1rem;
+    transform: perspective(500px) rotateY(0deg);
+}
+.espalda{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
     background-image: linear-gradient(to bottom, #40DFEF, #B9F8D3);
+    border: 1px solid black;
+    border-radius: 1rem;
+    transform: perspective(500px) rotateY(180deg);
+}
+.org__informacion:hover .frente{
+    transform: perspective(500px) rotateY(180deg);
+}
+.org__informacion:hover .espalda{
+    transform: perspective(500px) rotateY(360deg);
 }
 .ig, .tw, .github, .gmail {
-    height: 70px;
-    width: 70px;
-    position: relative;
-    margin-left: 35px;
-}
-/* animaciones */
-@keyframes zoom{
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1.5);
-    }
+    height: 50px;
+    width: 50px;
 }
 /* Media Queries */
 @media screen and (max-width:1023px) {
@@ -396,6 +426,13 @@ iframe {
         grid-template-columns: 1fr;
     }
     /* contacto */
+    .contact{
+        height: 90vh;
+    }
+    .org{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 @media screen and (max-width: 640px) {
     /* header */
@@ -460,9 +497,6 @@ iframe {
         height: 100px;
     }
     /* contacto */
-    .contact {
-        height: auto;
-    }
     .org {
         flex-direction: column;
     }
