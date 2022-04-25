@@ -56,6 +56,28 @@ nav {
 h1 {
     color: rgb(8, 66, 141);
     font-weight: 600;
+    animation-name: rebote;
+    animation-duration: 2s;
+}
+@keyframes rebote{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scaleX(1.3);
+        transform: scaleY(0.7);
+    }
+    50%{
+        transform: scaleX(0.7);
+        transform: scaleY(1.3);
+    }
+    75%{
+        transform: scaleX(1.3);
+        transform: scaleY(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 /* Codigo del main Index */
 .bloques {
@@ -77,6 +99,13 @@ h1 {
     width: 190px;
     height: 180px;
 }
+.axs__imagen:hover {
+    animation-name: rotacion;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 .bloque2 {
     padding-right: 1rem;
 }
@@ -87,6 +116,14 @@ h1 {
 .v3__imagen {
     width: 100%;
     height: 28rem;
+}
+@keyframes rotacion{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 /* Codigo Como jugar */
 .mainjugar {
@@ -275,7 +312,7 @@ iframe {
     padding: 1rem;
     background-image: linear-gradient(to bottom, #40DFEF, #B9F8D3);
 }
-.ig, .tw, .wp, .github, .gmail {
+.ig, .tw, .github, .gmail {
     height: 70px;
     width: 70px;
     position: relative;
