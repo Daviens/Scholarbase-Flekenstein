@@ -1,0 +1,19 @@
+{
+  "name": "scholarbase_flekenstein",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass style.scss ./css/style.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daviens/Scholarbase-Flekenstein.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daviens/Scholarbase-Flekenstein/issues"
+  },
+  "homepage": "https://github.com/Daviens/Scholarbase-Flekenstein#readme"
+}
