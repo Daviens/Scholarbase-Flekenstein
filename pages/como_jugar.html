@@ -1,70 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cómo jugar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Como Jugar - Scholar Base</title>
+    <!-- cdn bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- cdn iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- cdn bs.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header>
-        <nav class="grid">
-            <div class="grid__hijo--1 grid__hijo">
-                <img src="../images/slp.png" alt="Smooth Love Potion" class="slp">
-            </div>
-            <div class="grid__hijo--2 grid__hijo">
-                <h2>Scholar Base</h2>
-            </div>
-            <div class="grid__hijo--3 grid__hijo">
-                <h1>Axie Infinity</h1>
-            </div>
-            <div class="grid__hijo--4 grid__hijo">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="como_jugar.html">Cómo jugar</a></li>
-                    <li><a href="guild.html">Guild</a></li>
-                    <li><a href="herramientas.html">Herramientas</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow mb-4 rounded">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="#"><img src="../images/slp.png" alt="smooth love potion" width="50" height="50" class="d-inline-block align-text">Scholar Base</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./como_jugar.html">Como jugar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./guild.html">Guild</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./herramientas.html">Herramientas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                  </li>
                 </ul>
+              </div>
             </div>
         </nav>
     </header>
-    <main class="mainjugar">
-        <h3 class="mainjugar__titulo">Conceptos básicos del modo PvP</h3>
-        <section class="mainjugar__conceptos">
-            <article>
-                <img src="../images/cartas.png" alt="Cartas de axies" class="cartas">
-                <h3>Cartas y energías</h3>
-                <p>Al inicio de cada partida obtendremos 6 cartas (distribuidas entre los 3 axies) y 3 puntos de energía. Mientras que en las siguientes rondas solo nos rotaran 3 cartas y 2 puntos de energía.</p>
-            </article>
-            <article>
-                <img src="../images/turnos.png" alt="Rondas" class="rondas">
-                <h3>Rondas</h3>
-                <p>Las partidas están divididas en rondas que tienen 2 fases:</p>
-                <ul>
-                    <li>Fase de preparación</li>
-                    <li>Fase de lucha</li>
-                </ul>
-                <p>En la primer fase (preparación) se deben ordenar las cartas que deseamos jugar. En la segunda fase (lucha) se desarrolla el combate según las cartas que se hayan jugado.</p>
-            </article>
-        </section>
-        <div class="mainjugar__triangulo">
-            <div>
-                <h4>Triángulo de poder</h4>
-                <p>En total hay 9 clases que se dividen en 3 grupos. El primero esta compuesto por Planta, Reptil y Dusk. El segundo por Pez, Pájaro y Dawn. El tercero por Bestia, Bicho y Mech. Siguiendo las líneas de la imagen podemos ver que grupo recibe más/menos daño por cartas de otro grupo y además a que grupo le hacemos más/menos daño con nuestras cartas.</p>
-            </div>
-            <img src="../images/triangulo.png" alt="debilidades clases">
+    <footer class="bg-dark text-white rounded">
+        <div class="container row">
+          <h4 class="col-3">Scholar Base</h4>
+          <p class="col-5">Derechos reservados para miembros de la asociación y afines.</p>
+          <div class="col-4 d-flex justify-content-evenly align-items-center">
+            <a target="_blank" href="https://discord.com/invite/axiees"><i class="bi bi-discord"></i></a>
+            <a target="_blank" href="https://twitter.com/AxieInfinity"><i class="bi bi-twitter"></i></a>
+            <a target="_blank" href="https://www.reddit.com/r/AxieInfinity/"><i class="bi bi-reddit"></i></a>
+          </div>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BtYg8BFYXeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </main>
-    <footer class="pie">
-        <p>Derechos reservados para miembros de la asociación y afines.</p>
-        <a target="_blank" href="https://discord.com/invite/axiees"><img src="../images/Discord.png" alt="logo dircord" class="discord"></a>
-        <a target="_blank" href="https://twitter.com/AxieInfinity"><img src="../images/twitter.jpg" alt="logo twitter" class="twitter"></a>
     </footer>
 </body>
 </html>
