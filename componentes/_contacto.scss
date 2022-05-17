@@ -1,7 +1,7 @@
-.herni{
+.fondoc{
     background-image: url(../images/lunacia.jpg);
     article{
-        border: solid 1px black;
-        background-color: white;
+        @extend .tarjeta;
+        @include color(white);
     }
 }
