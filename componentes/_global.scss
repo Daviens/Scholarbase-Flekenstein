@@ -1,13 +1,11 @@
-/* resetea los estilos default de los navegadores */
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-/* Tiene 400, 400i, 600, 600i */
-body{
-    font-family: 'Spectral', serif;
+.tarjeta{
+    border: solid 1px black;
 }
-main {
-    background-color: #CEAB93;
+@mixin color($variable){
+    background-color: $variable;
 }

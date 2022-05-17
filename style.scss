@@ -1,9 +1,9 @@
-@import"./componentes/global";
+@import "./componentes/variables";
+@import "./bootstrap/scss/bootstrap.scss";
+@import "./componentes/index";
 @import "./componentes/footer";
 @import "./componentes/header";
-@import "./componentes/mainIndex";
-@import "./componentes/mainComo_jugar";
-@import "./componentes/mainGuild";
-@import "./componentes/mainHerramientas";
-@import "./componentes/mainContacto";
-@import "./componentes/mediaQueries";
+@import "./componentes/global";
+@import "./componentes/guild";
+@import "./componentes/comojugar";
+@import "./componentes/contacto";

@@ -1,0 +1,7 @@
+.fondoc{
+    background-image: url(../images/lunacia.jpg);
+    article{
+        @extend .tarjeta;
+        @include color(white);
+    }
+}
