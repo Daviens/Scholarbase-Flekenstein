@@ -2419,7 +2419,7 @@ textarea.form-control-lg {
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
   appearance: none;
-  /* color-adjust: exact; */
+  color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -11131,6 +11131,14 @@ header nav img {
 
 .tarjeta, .fondoc article {
   border: solid 1px black;
+}
+
+p {
+  font-family: "Spectral", serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Kanit", sans-serif;
 }
 
 ul {

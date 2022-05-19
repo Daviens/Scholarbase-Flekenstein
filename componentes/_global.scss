@@ -13,3 +13,9 @@
 @mixin color($variable){
     background-color: $variable;
 }
+p{
+    font-family: 'Spectral', serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Kanit', sans-serif;
+}
