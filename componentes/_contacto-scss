@@ -5,6 +5,3 @@
         @include color(white);
     }
 }
-span{
-    font-family: 'Lobster', cursive;
-}
