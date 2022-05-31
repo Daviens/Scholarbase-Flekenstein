@@ -11178,3 +11178,10 @@ ul {
 span {
   font-family: "Lobster", cursive;
 }
+
+@media (max-width: 777px) {
+  .fondoc {
+    background-image: none;
+    background-color: #ede4f8;
+  }
+}
