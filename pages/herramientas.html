@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&family=Lobster&family=Roboto:wght@300;400&family=Tiro+Kannada:ital@1&display=swap" rel="stylesheet">
   <!-- Link a css -->
   <link rel="stylesheet" href="../css/style.css">
+  <!-- CDN Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- SEO -->
   <meta name="keywords" content="Staking, Axie Infinity, DEX, descentralizado, comunidad, Streamers">
   <!-- favicon -->
@@ -23,7 +25,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow rounded">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
             <div class="container-fluid">
               <a class="navbar-brand text-white" href="#"><img src="../images/slp.png" alt="smooth love potion" width="50" height="50" class="d-inline-block align-text">Scholar Base</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -53,7 +55,7 @@
     </header>
     <main class="bg-success">
       <section class="row m-0 p-0 justify-content-center align-items-center">
-        <article class="col-8 card mb-3 p-0 rounded shadow text-center mt-4">
+        <article class="col-md-8 card mb-5 p-0 rounded shadow text-center mt-4">
           <img src="../images/staking.png" class="card-img-top m-0 p-0 border-bottom" alt="Overlay del sitio oficial de staking de AXS">
           <div class="card-body">
             <h5 class="card-title text-white bg-primary rounded">AXS Staking</h5>
@@ -61,8 +63,8 @@
             <a href="https://stake.axieinfinity.com/" target="_blank" class="btn btn-primary">Sitio oficial</a>
           </div>
         </article>
-        <article class="col-6 card mb-3 p-0 rounded shadow text-center">
-          <img src="../images/aquatic-eyes-04.png" class="card-img-top rounded" alt="Dos axies intercambiando items">
+        <article class="col-md-6 card mb-5 p-0 rounded shadow text-center wow animate__animated animate__fadeInDown">
+          <img src="../images/aquatic-eyes-04.png" class="card-img-top rounded deximg" alt="Dos axies intercambiando items">
           <div class="card-body">
             <h5 class="card-title text-white bg-primary rounded">Katana DEX</h5>
             <p class="card-text">Katana es un exchange descentralizado (DEX) el cual mediante contratos inteligentes permite el intercambio de divisas entre los participantes del ecosistema. Una vez se ingresa podemos notar que tiene diferentes secciones que pueden ser de utilidad pero que funcionan de manera distinta al AXS Staking. Es por esto último que alentamos el aprendizaje sobre "Impermanent loss" antes de utilizar el exchange</p>
@@ -71,7 +73,7 @@
         </article>
       </section>
       <section class="row justify-content-center gap-5 container-fluid">
-        <article class="col-md-5 mb-3 p-0 rounded shadow text-center bg-light">
+        <article class="col-md-5 mb-3 p-0 rounded shadow text-center bg-light wow animate__animated animate__fadeInLeft">
           <div>
             <h4 class="text-white bg-primary rounded">Ayudas de la comunidad</h4>
             <p>La comunidad ha realizado muy buenos trabajos que ayudan a los jugadores (becados o independientes) a tener una mejor organización o simplemente acceder a información de manera más amena. Podemos encontrar: <ul>
@@ -82,14 +84,14 @@
           </p>
           </div>
         </article>
-        <article class="col-md-5 rounded shadow text-center mb-3 p-0 bg-light">
+        <article class="col-md-5 rounded shadow text-center mb-3 p-0 bg-light wow animate__animated animate__fadeInRight">
           <h4 class="text-white bg-primary rounded">Streamers</h4>
           <p>Desde nuestra guild avalamos el entusiasmo por transmitir emociones, información, competitividad o incluso una mera charla a través de plataformas de streaming o videos, por eso facilitamos contenido para aquellos que deseen encarminarse en esta aventura. <a href="https://drive.google.com/drive/u/1/folders/1aFNlBURMLdsR7ial-yjgmnhoXhug5n9v" target="_blank">Haz click aquí para acceder al contenido</a> 
           </p>
       </article>
       </section>
     </main>
-    <footer class="bg-dark text-white rounded">
+    <footer class="bg-dark text-white">
       <div class="container row d-flex justify-content-evenly">
         <h4 class="col-md-3">Scholar Base</h4>
         <p class="col-md-5">Derechos reservados para miembros de la asociación y afines.</p>
@@ -100,5 +102,9 @@
         </div>
       </div>
   </footer>
+  <script src="../js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>

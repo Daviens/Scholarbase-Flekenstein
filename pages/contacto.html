@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&family=Lobster&family=Roboto:wght@300;400&family=Tiro+Kannada:ital@1&display=swap" rel="stylesheet">
   <!-- Link a css -->
   <link rel="stylesheet" href="../css/style.css">
+  <!-- CDN Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- SEO -->
   <meta name="keywords" content="metaverso, Academia, diseño, CTG, juegos de estrategia">
   <!-- favicon -->
@@ -23,7 +25,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow mb-4 rounded">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow mb-4">
             <div class="container-fluid">
               <a class="navbar-brand text-white" href="#"><img src="../images/slp.png" alt="smooth love potion" width="50" height="50" class="d-inline-block align-text">Scholar Base</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -52,8 +54,8 @@
         </nav>
     </header>
     <main class="fondoc">
-      <div class="d-flex justify-content-center">
-        <h1 class="w-50 text-center">Estamos construyendo el <span class="text-primary">metaverso</span> al empoderar a las personas para que sean parte de él.</h1>
+      <div class="d-flex justify-content-center mb-4 mt-4">
+        <h1 class="w-50 text-center display-5">Estamos construyendo el <span class="text-primary">metaverso</span> al empoderar a las personas para que sean parte de él.</h1>
       </div>
      <section class="row justify-content-around contain container-fluid">
        <article class="col-md-5 mb-5 rounded">
@@ -93,7 +95,7 @@
           <button type="submit" class="btn btn-primary">Submit</button>
          </form>
       </article>
-      <article class="col-md-4 rounded text-center mb-4">
+      <article class="col-md-4 rounded text-center mb-4 wow animate__animated animate__flipInX">
         <h4 class="bg-primary rounded text-white mt-3 p-2">¿Te gusta el diseño de nuestro sitio?</h4>
         <h5>¡Contacta con su diseñador!</h5>
         <div class="d-flex justify-content-around mb-3">
@@ -104,7 +106,7 @@
       </article>
      </section>
     </main>
-    <footer class="bg-dark text-white rounded">
+    <footer class="bg-dark text-white">
       <div class="container row d-flex justify-content-evenly">
         <h4 class="col-md-3">Scholar Base</h4>
         <p class="col-md-5">Derechos reservados para miembros de la asociación y afines.</p>
@@ -115,5 +117,9 @@
         </div>
       </div>
   </footer>
+  <script src="../js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
